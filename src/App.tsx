@@ -1,4 +1,5 @@
 import { NetworkCanvas } from './canvas/NetworkCanvas';
+import { DepartmentalArchitectureSummary } from './components/DepartmentalArchitecture/DepartmentalArchitectureSummary';
 import { Inspector } from './components/Inspector/Inspector';
 import { TrustGraphSummary } from './components/TrustGraph/TrustGraphSummary';
 import { SyncStatus } from './stages/shared/SyncStatus';
@@ -23,6 +24,7 @@ export default function App() {
       </section>
 
       <TrustGraphSummary />
+      <DepartmentalArchitectureSummary />
     </main>
   );
 }
