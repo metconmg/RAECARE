@@ -9,8 +9,9 @@ The deliverable is a shareable interactive SPA deck app or webpage set generated
 AntiGravity should not need conversational memory. It should only need:
 
 1. this instruction file,
-2. repository access,
-3. the artifact files already committed in the repo.
+2. the Prototype A staging output,
+3. repository access,
+4. the artifact files already committed in the repo.
 
 ## Source Repository
 
@@ -21,6 +22,14 @@ Use this repository:
 Default branch:
 
 `main`
+
+## Additional Staging Source
+
+Read this file and use it as the screen-by-screen staging reference:
+
+`docs/orchestration/prototype-a-ai-studio-staging-structure.md`
+
+Prototype B should operationalize that staging structure into a shareable app / deck.
 
 ## Target Deliverable
 
@@ -54,23 +63,27 @@ If static HTML is selected instead, create:
 
 Read these first:
 
-1. `docs/prototype-artifact-index.md`
-2. `docs/section-3-master-document.md`
-3. `docs/departmental-architecture.md`
-4. `public/prototypes/raecare-prototype.html`
-5. `public/prototypes/raecare-trust-graph.html`
-6. `public/prototypes/raecare-pricing-flow.html`
-7. `data/RCare Scenario Library CSV - Table 1.csv`
-8. `src/core/section3.ts`
-9. `src/core/departmentalArchitecture.ts`
-10. `tests/section3.test.ts`
-11. `tests/departmentalArchitecture.test.ts`
+1. `docs/orchestration/prototype-b-antigravity-execution-brief.md`
+2. `docs/orchestration/prototype-a-ai-studio-staging-structure.md`
+3. `docs/prototype-artifact-index.md`
+4. `docs/section-3-master-document.md`
+5. `docs/departmental-architecture.md`
+6. `public/prototypes/raecare-prototype.html`
+7. `public/prototypes/raecare-trust-graph.html`
+8. `public/prototypes/raecare-pricing-flow.html`
+9. `data/RCare Scenario Library CSV - Table 1.csv`
+10. `src/core/section3.ts`
+11. `src/core/departmentalArchitecture.ts`
+12. `tests/section3.test.ts`
+13. `tests/departmentalArchitecture.test.ts`
 
 ## Build Principle
 
 100% orchestration via repository and artifacts.
 
 Do not ask for missing chat context. Use the repo as the complete context package.
+
+If any file is missing, continue with the available repo files, document the missing file in the build receipt, and proceed.
 
 ## Required Deck / App Flow
 
@@ -253,6 +266,7 @@ Receipt must include:
 5. How to run locally
 6. How to share / deploy
 7. Validation performed
+8. Whether Prototype A staging was consumed
 
 ## Local Validation
 
