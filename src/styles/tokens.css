@@ -1,0 +1,17 @@
+:root {
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 2.5rem;
+  --radius: 22px;
+  --bg: #071016;
+  --panel: rgba(255,255,255,0.07);
+  --panel-strong: rgba(255,255,255,0.11);
+  --stroke: rgba(255,255,255,0.16);
+  --text: #eef7f8;
+  --muted: #9db0b5;
+  --accent: #8bd5d1;
+  --warning: #e8c46c;
+  --danger: #ef8d8d;
+}

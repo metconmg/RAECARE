@@ -1,0 +1,27 @@
+.canvas-shell { display: grid; gap: var(--space-4); }
+.zone-panel, .panel, .node-card { border: 1px solid var(--stroke); background: var(--panel); border-radius: var(--radius); box-shadow: 0 24px 80px rgba(0,0,0,0.24); }
+.zone-panel { padding: var(--space-3); }
+.zone-panel h2 { margin: 0 0 var(--space-2); color: var(--muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em; }
+.zone-stack { display: grid; gap: var(--space-2); }
+.panel { padding: var(--space-3); }
+.node-card { padding: var(--space-3); background: var(--panel-strong); }
+.node-card-header { display: flex; justify-content: space-between; gap: var(--space-2); align-items: flex-start; }
+.node-id { margin: 0; color: var(--accent); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.node-card h3 { margin: var(--space-1) 0 0; font-size: 1.25rem; }
+.node-card p { color: var(--muted); line-height: 1.55; }
+.state-badge, .sync-status, .invariant-pill { display: inline-flex; align-items: center; gap: 0.45rem; border: 1px solid var(--stroke); border-radius: 999px; padding: 0.45rem 0.7rem; font-size: 0.75rem; }
+.state-verified { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 55%, transparent); }
+.state-active { color: #b7d6ff; border-color: rgba(183,214,255,0.42); }
+.state-pending { color: var(--warning); border-color: rgba(232,196,108,0.42); }
+.state-error, .state-conflict { color: var(--danger); border-color: rgba(239,141,141,0.42); }
+.lever-list { margin: var(--space-2) 0 0; padding-left: 1.2rem; color: var(--text); }
+.lever-list li + li { margin-top: 0.35rem; }
+.sync-status { background: var(--panel-strong); }
+.sync-status span { color: var(--muted); text-transform: uppercase; letter-spacing: 0.12em; }
+.inspector { min-width: 0; }
+.tab-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-1); margin-bottom: var(--space-3); }
+.tab-row button { border: 1px solid var(--stroke); color: var(--text); background: transparent; border-radius: 999px; padding: 0.6rem; }
+.inspector-list { display: grid; grid-template-columns: 96px 1fr; gap: var(--space-1) var(--space-2); }
+.inspector-list dt { color: var(--muted); }
+.inspector-list dd { margin: 0; }
+.muted { color: var(--muted); }

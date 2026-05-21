@@ -1,0 +1,48 @@
+import type { NodeData } from './types';
+
+export const nodeDatabase: NodeData[] = [
+  {
+    id: 'A001',
+    name: 'Root Entry Layer',
+    coords: 'F-1:F-2',
+    zone: 'A_Entry',
+    purpose: 'URL gating and session-token checks before secure subfolder access.',
+    invariant: 'Any direct link to secure subfolders initiates background verification.',
+    levers: ['Direct-link guard', 'Session-token status', 'Background verification banner'],
+    state: 'VERIFIED',
+    confidence: 'HIGH',
+  },
+  {
+    id: 'A002',
+    name: 'Landing Intake',
+    coords: 'E-3:G-5',
+    zone: 'A_Entry',
+    purpose: 'Role-triage matrix for guarded intake routing.',
+    invariant: 'Open-ended text search removed from landing to prevent exploit paths.',
+    levers: ['Role-triage matrix', 'Guarded intake routing', 'No free-text search'],
+    state: 'ACTIVE',
+    confidence: 'HIGH',
+  },
+  {
+    id: 'B001',
+    name: 'Client Dashboard',
+    coords: 'C-6:D-6',
+    zone: 'B_Client',
+    purpose: 'Verified families dashboard with trust-tier visibility.',
+    invariant: 'Unverified caregiver records scrubbed from dashboard by default.',
+    levers: ['Verified-family filter', 'Scrubbed record state', 'Trust-tier visibility'],
+    state: 'ACTIVE',
+    confidence: 'HIGH',
+  },
+  {
+    id: 'B002',
+    name: 'Client Intake Wizard',
+    coords: 'TBD',
+    zone: 'B_Client',
+    purpose: 'Resume banner and questionnaire checkpoints for client intake.',
+    invariant: 'Intake continuation preserves questionnaire lineage.',
+    levers: ['Resume banner', 'Questionnaire checkpoints', 'Intake lineage'],
+    state: 'PENDING',
+    confidence: 'MEDIUM',
+  },
+];
