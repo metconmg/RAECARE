@@ -1,5 +1,6 @@
 import { NetworkCanvas } from './canvas/NetworkCanvas';
 import { Inspector } from './components/Inspector/Inspector';
+import { TrustGraphSummary } from './components/TrustGraph/TrustGraphSummary';
 import { SyncStatus } from './stages/shared/SyncStatus';
 import { nodeDatabase } from './core/data';
 
@@ -20,6 +21,8 @@ export default function App() {
         <NetworkCanvas nodes={nodeDatabase} />
         <Inspector node={activeNode} />
       </section>
+
+      <TrustGraphSummary />
     </main>
   );
 }
